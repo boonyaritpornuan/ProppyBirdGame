@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Clone</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-4 mb-4">Flappy Bird Clone</h1>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="480" height="640"></canvas>
+            <div id="score" class="score">Score: 0</div>
+            <div id="gameOver" class="game-over d-none">
+                <h2>Game Over!</h2>
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <button class="btn btn-primary" onclick="restartGame()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

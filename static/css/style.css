@@ -1,0 +1,30 @@
+.game-container {
+    position: relative;
+    width: 480px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+#gameCanvas {
+    background-color: var(--bs-dark);
+    border: 2px solid var(--bs-primary);
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: var(--bs-light);
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(var(--bs-dark-rgb), 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
